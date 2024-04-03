@@ -1,0 +1,30 @@
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #007bff; 
+    color: white;
+    position: fixed;
+    top: 0; 
+    right: 0;
+    width: 250px; 
+    height: auto; 
+    transform: translateX(100%);
+    transition: visibility 0s, opacity 0.3s linear, transform 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); 
+    z-index: 100; 
+    margin-right: 620px;
+  }
+  
+  .navigation-menu.open {
+    transform: translateX(0); 
+  }
+  
+  .menu-item {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .section-divider {
+    width: 100%;
+    margin: 20px 0;
+  }

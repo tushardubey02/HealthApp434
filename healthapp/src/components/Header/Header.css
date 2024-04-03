@@ -1,0 +1,33 @@
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .menu-icon {
+    font-size: 24px; 
+  }
+
+  .title{
+    color: white;
+  }
+
+.search-input {
+    flex-grow: 1; 
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-icon {
+    color: white;
+    font-size: 24px;
+  }
+  

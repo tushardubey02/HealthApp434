@@ -1,0 +1,42 @@
+.dashboard {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto; 
+
+  justify-content: center;
+  align-content: start;
+  max-width: 541px; 
+  margin: 0 auto; 
+  border: 2px solid white; 
+  min-height: calc(100vh - 16vh);
+}
+
+.dashboard > div {
+  border: 2px solid white; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard h2, .dashboard p, .dashboard span {
+  color: white;
+}
+
+.calorie-wheel, .sleep-score, .suggestions, .movement {
+  border: 1px solid white; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 62vh);
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    grid-template-columns: 1fr; 
+  }
+}
