@@ -1,5 +1,5 @@
 .search-page {
-    background-color: black;
+    background-color: #121212;
     display: grid;
     grid-template-columns: 1fr; 
     grid-template-rows: auto auto; 
@@ -42,7 +42,7 @@
   }
   
   .search-item {
-    background-color: black;
+    background-color: #121212;
     color: white;
     padding: 10px;
     margin-bottom: 10px;
