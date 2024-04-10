@@ -1,10 +1,16 @@
 import React from 'react';
 import './Dashboard.css';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import Toast from 'react-bootstrap/Toast';
+import Placeholder from 'react-bootstrap/Placeholder';
+import Card from 'react-bootstrap/Card';
+// import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+
+
 
 function Dashboard() {
-  const sleepValue = 10 ; // Example sleep value, you can replace it with your own value
-
+  const sleepValue = 7 ; // Example sleep value, you can replace it with your own value
   const barWidth = sleepValue * 20; // Adjust the width of the bar based on the sleep value
   const barColor = sleepValue >= 8 ? 'lawngreen' : 'orange'; // Set the color based on the sleep value
   if (sleepValue < 6) {
@@ -26,14 +32,14 @@ function Dashboard() {
       </div>
       <div className="suggestions">
         <h2>Suggestions</h2>
-        <p>Optimize your wellness with every charge! ...</p>
-      </div>
-      <div className="movement">
-        <h2>Your Movement</h2>
-        <div className="circle"></div>
-      </div>
-    </div>
-  );
+        <p>Optimize your  wellness with every charge! ...</p>
+                </div>
+                <div className="movement">
+            <h2>Your Movement</h2>
+            <div className="circle"></div>
+                </div>
+              </div>
+            );
 }
 
 export default Dashboard;
