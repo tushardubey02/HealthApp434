@@ -3,6 +3,8 @@ import { useLocation } from 'react-router-dom';
 import './Header.css';
 import { FaBars, FaSearch } from 'react-icons/fa';
 import NavigationMenu from '../NavigationMenu/NavigationMenu';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function Header({ toggleMenu, isMenuOpen, closeMenu }) {
   const [searchQuery, setSearchQuery] = useState("");
