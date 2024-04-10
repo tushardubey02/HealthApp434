@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* CSS for larger screens */
+body {
+  background-color: #121212;
+  color: lightgray;
+}
+
+/* CSS for mobile devices */
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 2rem;
+    background-color: #121212;
+    color: lightgray;  }
+}

@@ -9,6 +9,8 @@ import ExerciseData from './pages/ExerciseData/ExerciseData';
 import Settings from './pages/AddItem/AddItem'; 
 import Search from './pages/Search/Search'; 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
