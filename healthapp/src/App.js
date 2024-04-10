@@ -1,27 +1,43 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Profile from './pages/Profile/Profile';
+import HealthData from './pages/HealthData/HealthData';
+import ExerciseData from './pages/ExerciseData/ExerciseData';
+import Settings from './pages/AddItem/AddItem'; 
+import Search from './pages/Search/Search'; 
 import './App.css';
 import Button from 'react-bootstrap/Button';
 
-import React from 'react';
+function App() {
 
-function LandingPage() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
-    <div className="landing-page">
-      <header className="landing-header">
-        <h1>Your Health App</h1>
-        <p>A brief description of your app</p>
-        <button>Download Now</button>
-        {/* <Button variant="primary">Primary</Button> */}
-      </header>
-      <section className="features">
-        <h2>Key Features</h2>
-        // List your key features here
-      </section>
-      <section className="testimonials">
-        <h2>What Our Users Say</h2>
-        // Display testimonials here
-      </section>
-    </div>
+    <Router>
+      <div className="App">
+        <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} closeMenu={closeMenu} />
+        <Routes>
+          <Route exact path="/" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/healthdata" element={<HealthData />} />
+          <Route path="/exercisedata" element={<ExerciseData />} />
+          <Route path="/AddItem" element={<Settings />} /> 
+          <Route path="/search" element={<Search />} /> 
+        </Routes>
+        <Footer closeMenu={closeMenu} />
+      </div>
+    </Router>
   );
 }
 
