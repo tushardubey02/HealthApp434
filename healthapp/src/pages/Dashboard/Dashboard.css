@@ -54,7 +54,7 @@
 .calorie-wheel {
   position: relative;
   text-align: center;
-  max-width: 240px;
+  max-width: 260px;
 }
 
 .calorie-info {
@@ -84,7 +84,7 @@
 
 .movement {
   position: relative;
-  width: 240px; 
+  width: 260px; 
   height: 200px;
   margin: auto;
 }
