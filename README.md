@@ -3,6 +3,5 @@
 ## Welcome to our Health App!!
 
 To view the app run 
-    cd healthapp
-and then 
-    npm start
+   <code>cd healthapp</code>
+and then <code>npm i</code> followed by <code> npm start </code>

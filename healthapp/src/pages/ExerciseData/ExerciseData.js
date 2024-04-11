@@ -42,9 +42,7 @@ function ExerciseData() {
         <h2>Your Movement</h2>
         {/* <div className="graph-placeholder">Graph here</div> */}
         <div className="graph-container">
-
           <Bar data={data} options={options} />
-
         </div>
         <div className="button-container">
           <Button variant="light" className='add-item' onClick={() => window.location.href = '/additem'}>Add Exercise +</Button>
