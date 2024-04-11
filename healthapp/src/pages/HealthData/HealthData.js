@@ -2,6 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';
+import Button from 'react-bootstrap/Button';
 import './HealthData.css'; 
 
 function HealthData() {
@@ -109,6 +110,9 @@ function HealthData() {
         <h2>Sleep</h2>
         <div className="graph-placeholder">Zzz...</div>
         <p>You've met 0% of your sleep goal</p>
+        <div className="button-container">
+          <Button variant="light" className='add-item' onClick={() => window.location.href = '/additem'}>Log Sleep</Button>
+        </div>
       </div>
     </div>
   );
