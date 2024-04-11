@@ -8,3 +8,23 @@
   min-height: calc(100vh - 15vh);
   color: white;
 }
+
+.addform{
+  padding: 1rem;
+}
+
+.header{
+  padding: 1rem;
+}
+
+.smallform{
+  max-width:50%;
+}
+
+.form-label{
+  margin-top: 0.5rem;
+}
+
+.submit-btn{
+  margin-top: 1rem;
+}
