@@ -1,5 +1,6 @@
 import React from 'react';
 import './HealthData.css'; 
+import Button from 'react-bootstrap/Button';
 
 function HealthData() {
   return (
@@ -16,6 +17,9 @@ function HealthData() {
         <h2>Sleep</h2>
         <div className="graph-placeholder">Zzz...</div>
         <p>You've met 0% of your sleep goal</p>
+        <div className="button-container">
+          <Button variant="light" className='add-item' onClick={() => window.location.href = '/additem'}>Track Sleep</Button>
+        </div>
       </div>
     </div>
   );

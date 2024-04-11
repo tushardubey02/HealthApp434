@@ -28,3 +28,7 @@
 .submit-btn{
   margin-top: 1rem;
 }
+
+.smallerform{
+  max-width:40%;
+}
