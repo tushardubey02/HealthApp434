@@ -9,7 +9,7 @@ function AddItem() {
       <Form className="addform">
         <Form.Group controlId="formExercise" className='formExercises'>
           <Form.Label className='form-label'>Exercise</Form.Label>
-          <Form.Control type="text" placeholder="Enter your exercise here" />
+          <Form.Control type="text" placeholder="Enter Exercise Name" />
           <Form.Group className='smallform' controlId="formTime">
             <Form.Label>Time Performed</Form.Label>
             <Form.Control type="number" placeholder="Enter time performed" />
@@ -18,7 +18,7 @@ function AddItem() {
 
         <Form.Group controlId="formFood">
           <Form.Label>Food</Form.Label>
-          <Form.Control type="text" placeholder="Enter food" />
+          <Form.Control type="text" placeholder="Enter Food Name" />
           <Form.Group className='smallerform'  controlId="formCalories">
             <Form.Label>Calories</Form.Label>
             <Form.Control type="number" placeholder="Enter calories" />
