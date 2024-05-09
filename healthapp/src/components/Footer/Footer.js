@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Footer.css';
-import { FaHome, FaHeart, FaSearch, FaRunning } from 'react-icons/fa';
+import { FaHome, FaHeart, FaSearch, FaRunning, FaHeartbeat } from 'react-icons/fa';
 import {IoIosAdd} from 'react-icons/io';
 
 function Footer({ closeMenu }) { 
@@ -24,7 +24,7 @@ function Footer({ closeMenu }) {
         <FaSearch color={getIconColor("/search")} />
       </Link>
       <Link to="/healthdata" className="footer-item" onClick={handleFooterItemClick}>
-        <FaHeart color={getIconColor("/healthdata")} />
+        <FaHeartbeat color={getIconColor("/healthdata")} />
       </Link>
       <Link to="/exercisedata" className="footer-item" onClick={handleFooterItemClick}>
         <FaRunning color={getIconColor("/exercisedata")} />
