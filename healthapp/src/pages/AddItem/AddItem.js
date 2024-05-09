@@ -3,10 +3,14 @@ import { Form, Button } from 'react-bootstrap';
 import './AddItem.css';
 
 function AddItem() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert('You have succesfully submitted the form.');
+  };
   return (
     <div className="addItem-data">
       <h1 className='header'>Add Item</h1>
-      <Form className="addform">
+      <Form className="addform" onSubmit={handleSubmit}>
         <Form.Group controlId="formExercise" className='formExercises'>
           <Form.Label className='form-label'>Exercise</Form.Label>
           <Form.Control type="text" placeholder="Enter Exercise Name" />
